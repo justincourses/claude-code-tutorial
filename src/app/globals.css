@@ -109,22 +109,30 @@ body {
 
 .animate-gradient-flow {
   background: linear-gradient(135deg, 
-    #9333ea 0%, 
-    #a855f7 8%, 
-    #ec4899 16%, 
-    #f97316 24%, 
-    #3b82f6 32%, 
-    #06b6d4 40%, 
-    #10b981 48%, 
-    #84cc16 56%, 
-    #f59e0b 64%, 
-    #ef4444 72%, 
-    #8b5cf6 80%, 
-    #ec4899 88%, 
-    #9333ea 100%
+    #1a0b2e 0%,
+    #16213e 5%,
+    #0f3460 10%,
+    #533483 15%,
+    #7209b7 20%,
+    #8b2fad 25%,
+    #c1258e 30%,
+    #e91e63 35%,
+    #ff1744 40%,
+    #ff6f00 45%,
+    #ff8f00 50%,
+    #1976d2 55%,
+    #0277bd 60%,
+    #00695c 65%,
+    #2e7d32 70%,
+    #558b2f 75%,
+    #9c27b0 80%,
+    #673ab7 85%,
+    #3f51b5 90%,
+    #2196f3 95%,
+    #1a0b2e 100%
   );
-  background-size: 600% 600%;
-  animation: gradient-flow 12s ease infinite;
+  background-size: 800% 800%;
+  animation: gradient-flow 25s ease infinite;
 }
 
 @keyframes rotate3d-1 {

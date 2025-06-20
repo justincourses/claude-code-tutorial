@@ -211,13 +211,13 @@ export default function Home() {
         <div className="text-center mt-16">
           <div className="flex items-center justify-center gap-8 text-white/60 text-lg">
             <a 
-              href="https://x.com/inderjc" 
+              href="https://x.com/interjc" 
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-white transition-colors duration-300 flex items-center gap-2"
             >
               <span>🐦</span>
-              <span>@inderjc</span>
+              <span>@interjc</span>
             </a>
             <span>•</span>
             <a 

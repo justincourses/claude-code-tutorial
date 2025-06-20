@@ -3,6 +3,32 @@
 import { useState, useEffect } from 'react';
 
 export default function Home() {
+  const robotEmojis = ['🤖', '🚀', '⚡', '🧠', '💻', '🔥', '✨', '🎯'];
+  const [currentEmoji, setCurrentEmoji] = useState(0);
+  const [rotationClass, setRotationClass] = useState('');
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      // 随机选择一个3D旋转动画
+      const rotations = ['animate-rotate3d-1', 'animate-rotate3d-2', 'animate-rotate3d-3', 'animate-rotate3d-4', 'animate-rotate3d-5'];
+      const randomRotation = rotations[Math.floor(Math.random() * rotations.length)];
+      
+      setRotationClass(randomRotation);
+      
+      // 在动画中途切换图标
+      setTimeout(() => {
+        setCurrentEmoji((prev) => (prev + 1) % robotEmojis.length);
+      }, 400);
+      
+      // 动画结束后清除类名
+      setTimeout(() => {
+        setRotationClass('');
+      }, 800);
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, [robotEmojis.length]);
+
   return (
     <div className="min-h-screen animate-gradient-flow relative overflow-hidden">
       {/* Animated Background Elements */}
@@ -15,8 +41,17 @@ export default function Home() {
       <div className="relative z-10 container mx-auto px-6 py-12">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent">
-            🤖 Claude Code
+          <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 bg-gradient-to-r from-white to-gray-200 bg-clip-text text-transparent flex items-center justify-center gap-4">
+            <span 
+              className={`inline-block hover:scale-110 ${rotationClass}`}
+              style={{ 
+                transformStyle: 'preserve-3d',
+                display: 'inline-block'
+              }}
+            >
+              {robotEmojis[currentEmoji]}
+            </span>
+            Claude Code
           </h1>
           <p className="text-xl md:text-2xl text-white/80 mb-8 max-w-3xl mx-auto">
             你的终端里的 AI 编程助手，让代码开发变得更简单、更快速 ⚡

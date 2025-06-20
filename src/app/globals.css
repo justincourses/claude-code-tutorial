@@ -53,6 +53,18 @@ body {
   }
 }
 
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .animation-delay-2000 {
   animation-delay: 2s;
 }
@@ -69,4 +81,10 @@ body {
   background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
+}
+
+.animate-gradient-flow {
+  background: linear-gradient(135deg, #9333ea, #ec4899, #3b82f6, #10b981, #f59e0b, #9333ea);
+  background-size: 400% 400%;
+  animation: gradient-flow 8s ease infinite;
 }

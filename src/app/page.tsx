@@ -1,6 +1,10 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+
 export default function Home() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-600 via-blue-600 to-cyan-500 relative overflow-hidden">
+    <div className="min-h-screen animate-gradient-flow relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-pink-400 to-purple-600 rounded-full opacity-20 animate-pulse"></div>
@@ -170,10 +174,27 @@ export default function Home() {
 
         {/* Footer */}
         <div className="text-center mt-16">
-          <p className="text-white/60 text-lg">
-            由 <span className="text-white font-semibold">Anthropic</span> 开发 • 
-            让编程变得更智能 🧠
-          </p>
+          <div className="flex items-center justify-center gap-8 text-white/60 text-lg">
+            <a 
+              href="https://x.com/inderjc" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors duration-300 flex items-center gap-2"
+            >
+              <span>🐦</span>
+              <span>@inderjc</span>
+            </a>
+            <span>•</span>
+            <a 
+              href="https://justincourse.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-white transition-colors duration-300 flex items-center gap-2"
+            >
+              <span>🎓</span>
+              <span>AI 课程</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>

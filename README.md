@@ -100,7 +100,7 @@ pnpm run dev
 
 ## 🔗 相关链接
 
-- [Twitter: @inderjc](https://x.com/inderjc)
+- [Twitter: @interjc](https://x.com/interjc)
 - [AI 课程](https://justincourse.com)
 
 ---

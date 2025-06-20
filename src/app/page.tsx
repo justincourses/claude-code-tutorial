@@ -131,13 +131,13 @@ export default function Home() {
                 <h4 className="text-xl font-semibold text-white mb-3">你可以说：</h4>
                 <div className="space-y-2">
                   <div className="bg-black/20 rounded-lg p-3">
-                    <p className="text-white/80">"帮我修复这个 bug"</p>
+                    <p className="text-white/80">&ldquo;帮我修复这个 bug&rdquo;</p>
                   </div>
                   <div className="bg-black/20 rounded-lg p-3">
-                    <p className="text-white/80">"重构这个函数"</p>
+                    <p className="text-white/80">&ldquo;重构这个函数&rdquo;</p>
                   </div>
                   <div className="bg-black/20 rounded-lg p-3">
-                    <p className="text-white/80">"添加单元测试"</p>
+                    <p className="text-white/80">&ldquo;添加单元测试&rdquo;</p>
                   </div>
                 </div>
               </div>
